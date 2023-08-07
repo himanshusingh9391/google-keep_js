@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Note</title>
+</head>
+<body>
+    <header>
+        <h1>Google Note</h1>
+        <button id="deleteAllNotes">Delete All Notes</button>
+    </header>
+    
+    <section class="notesList">
+        <!-- <div class="note">
+            <h4>Note Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ducimus?</p>
+            <button>Delete Note</button>
+        </div>
+
+        <div class="note">
+            <h4>Note Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ducimus?</p>
+            <button>Delete Note</button>
+        </div>
+
+        <div class="note">
+            <h4>Note Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ducimus?</p>
+            <button>Delete Note</button>
+        </div>
+
+        <div class="note">
+            <h4>Note Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ducimus?</p>
+            <button>Delete Note</button>
+        </div>
+
+        <div class="note">
+            <h4>Note Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ducimus?</p>
+            <button>Delete Note</button>
+        </div>
+
+        <div class="note">
+            <h4>Note Title</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ducimus?</p>
+            <button>Delete Note</button>
+        </div> -->
+       
+    </section>
+
+    <hr>
+    <section>
+        <h2>Create new note</h2>
+        <div class="createNote">
+            <input type="text" id="createNoteTitle" placeholder="Enter Note Title">
+            <textarea id="createNoteContent" name=""id="" cols="30" rows="10"></textarea>
+            <button id="createNoteButton"> Create Note</button>
+        </div>
+    </section>
+
+
+    <script src="./code.js"></script>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@100;400;700&family=Unbounded:wght@200&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'poppins';
+    }
+
+    body{
+        background: #e0f2f1;
+    }
+
+    header{
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    h1{
+        color: #00695c;
+    }
+    #deleteAllNotes{
+
+        color: #F4511E;
+        border: none;
+        padding: 0.7rem 2rem;
+        border-radius: 12rem;
+        font-weight: bold;
+        border: 1px solid #00695c;
+        cursor: pointer;
+    }
+    .notesList{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+        .note{
+            background:white;
+            border: 1px solid darkgray;
+            border-radius: 12px;
+            padding: 1rem;
+            margin: 1rem;
+        }
+        .note button{
+            background: #00695c;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0.8rem 2rem;
+            border: none;
+            margin: 0.8rem 0;
+            border-radius: 12px;
+        }
+        .createNote{
+            background: white;
+            border: 1px solid darkgray;
+            padding: 1rem;
+            width: 40vw;
+            margin: 1rem;
+            border-radius: 12px;
+        }
+        
+        input,textarea{
+            display: block;
+            outline: none;
+            border: none;
+            border-radius: 1px solid #00695c;
+            margin: 0.8rem 0;
+        }
+        #createNoteButton{
+            background: #F4511E;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0.8rem 2rem;
+            border: none;
+            margin: 0.8rem 0;
+            border-radius: 12px;
+
+        }
+        h2{
+            margin: 1rem;
+        }
+
+</style>
